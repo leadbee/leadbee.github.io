@@ -845,9 +845,39 @@
         <div class="container">
           <h3>Feel Free To Contact Us</h3>
           <hr>
+          <?php 
+
+          // EDIT THE 2 LINES BELOW AS REQUIRED
+          $email_to      = "khorshed@rextheme.com";
+          $email_subject = "Your email subject line";
+          $status        = "";
+          if ( $_POST['sendMessage'] ) {
+
+              $name       = filter_var( trim($_POST['name']), FILTER_SANITIZE_STRING );
+              $email_from = filter_var( trim($_POST['email']), FILTER_VALIDATE_EMAIL );
+              $message    = filter_var( trim($_POST['message']), FILTER_SANITIZE_STRING );
+              
+              if ( !empty($name) && !empty($email_from) && !empty($message) ) {
+                  $message_to_send  = "";
+                  $message_to_send .= "From: " . $name . "\n";
+                  $message_to_send .= "Sender email: " . $email_from . "\n";
+                  $message_to_send .= $message;
+
+                  if ( mail( $email_to, $email_subject, $message_to_send ) ) {
+                      $status = "<h4 class='mail-status'>Your mail sent successfully.</h4>";
+                  }else{
+                      $status = "<h4 class='mail-status'>Sorry, an error occured.</h4>";
+                  }
+              }else{
+                  $status = "<h4 class='mail-status'>Please try again with valid input.</h4>";
+              }
+          }
+          echo $status;
+
+          ?>
           <div class="row wow fadeInUp">
             <div class="col-md-12">
-              <form action="form.php#rex-contact" method="post">
+              <form action="form.php" method="post">
     
                 <div class="input-inline">
 
@@ -869,7 +899,7 @@
                   <textarea name="message" id="inputMessage" placeholder="Message (required)"></textarea>
                 </div>
     
-                <input class="submit-btn" name="sendMessage"  type="submit" value="Submit">
+                <input class="submit-btn" name="sendMessage" type="submit" value="Submit">
               </form>
             </div>
           </div>

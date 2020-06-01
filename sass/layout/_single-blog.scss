@@ -1,0 +1,319 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * 15. Single Blog Post Styles.
+ * ----------------------------------------------------------------------------------------
+ */
+
+ /* Header Style on Single Page */
+body.single{
+	header.container-fluid{
+		position: relative;
+		background-color: $bg-color-light;
+		padding-bottom: 35px;
+	}
+}
+
+/*
+ * Single Post Style
+ */
+section.rex-single-blog-post{
+	background-color: $bg-color-light-gray;
+	padding: 0;
+	/* Section Heading Style */
+	div.rex-section-heading{
+		height: 112px;
+		margin-bottom: 70px;
+		background: url(../images/white_wall_189px.png) repeat-x;
+		h4{
+			line-height: 112px;
+			text-align: center;
+			margin: 0;
+		}
+	}
+
+	h4{
+		text-align: left;
+	}
+	h4+hr{
+		width: 30px;
+		margin: 0;
+		height: 2px;
+		background-color: $heading-color;
+	}
+	/*
+	 * Post Style
+	 */
+	article{
+		padding-right: 20px;
+		/* Post meta style */
+		div.rex-post-meta{
+			margin-top: 50px;
+			p.rex-post-info a, a p{
+				color: $text-color;
+				letter-spacing: 2px;
+				&:hover{
+					color: $highlight-color;
+				}
+			}
+			a, a h4{
+				transition: color 0.2s ease-in;
+				&:hover{
+					color: $highlight-color;
+				}
+			}
+			p, h4{
+				margin: 0;
+			}
+			h4{
+				text-align: left;
+			}
+			p.date{
+				font-style: italic;
+				text-transform: uppercase;
+			}
+			hr{
+				margin: 10px 0;
+				width: 30px;
+				background-color: #e4e4e4;
+			}
+		}
+		/* Main Post Style */
+		div.rex-the-post{
+			margin: 50px 0;
+			p{
+				line-height: 2;
+			}
+			blockquote{
+				background-color: $bg-color-light;
+				padding: 70px;
+				margin: 60px 0;
+				letter-spacing: 2px;
+				font-style: italic;
+			}
+		}
+		/* Post tag style */
+		div.rex-post-tags{
+			height: 60px;
+			border-top: 1px solid #e0e0e0;
+			border-bottom: 1px solid #e0e0e0;
+
+			i.fa{
+				line-height: 60px;
+				padding: 0 25px;
+				margin-right: 35px;
+				text-align: right;
+				font-size: 18px;
+				border-right: 1px solid #e0e0e0;
+			}
+
+
+			a{
+				line-height: 60px;
+				text-align: left;
+				color: $text-color;
+				text-transform: uppercase;
+				transition: all .2s ease-in;
+
+				&:first-child{
+					display: inline-block;
+					padding-left: 35px;
+				}
+
+				&:hover{
+					color: $highlight-color;
+				}
+			}
+		}
+	}// article
+	
+	/*
+	 * Post Comments Style
+	 */
+	div.rex-comments{
+		margin: 70px 0;
+
+		div.rex-comment{
+			min-height: 170px;
+			margin: 60px 0;
+			border-top: 1px solid #e0e0e0;
+			border-bottom: 1px solid #e0e0e0;
+			clear: both;
+
+			&.thred-two{
+				margin-left: 100px; 
+			}
+		}// .rex-comment
+
+		figure.rex-comment-author{
+			float: left;
+			width: 15%;
+			max-width: 100px;
+			min-height: 170px;
+			img{
+				max-width : 80px;
+				max-height: 80px;
+				display: block;
+				position: relative;
+				top: 50%;
+				transform: translateY(50%);
+			}
+		}
+
+		div.rex-comment-details{
+			padding-left: 35px;
+			padding-bottom: 30px;
+			margin-left: 100px;
+			border-left: 1px solid #e0e0e0;
+		}
+		p.rex-comment-text{
+			padding-top: 30px;
+			margin-top: 0;
+			font-style: italic;
+			letter-spacing: 2px;
+		}
+		div.rex-comments-meta{
+			margin-top: 20px;
+		}
+		p{
+			display: inline-block;
+			letter-spacing: 3px;
+		}
+		p.rex-comment-day{
+			font-style: italic;
+			margin-right: 20px;
+		}
+		p.rex-comment-reply{
+			i.fa{
+				margin-right: 10px;
+			}
+			letter-spacing: 1px;
+		}
+		div.right{
+			p{
+				text-transform: none;
+			}
+			float: right;
+			text-align: right;
+		}
+	}// .rex-comments
+	
+	/*
+	 * Comment Form STyle
+	 */
+	div.rex-comment-form{
+		form{
+			margin-top: 70px;
+		}
+		div.input-small{
+			width: 75%;
+		}
+		div.form-group{
+			
+			border: 1px solid #e0e0e0;
+			border-right: none;
+			border-left: none;
+			margin-bottom: 30px;
+			max-height: 101px;
+
+			input, textarea{
+				border: none;
+				outline: none;
+				margin: 0;
+				height: 50px;
+				background: transparent;
+				padding: 5px;
+				border-left: 1px solid #e0e0e0;
+			}
+
+			input{
+				width: 90%;
+			}
+
+			textarea{
+				width: 92%;
+				height: 100px;
+				padding-bottom: 0;
+			}
+
+
+			i.fa{
+				max-width: 48px;
+				font-size: 18px;
+				padding: 15px 20px;
+				margin: 0;
+				text-align: right;
+				vertical-align: top;
+				float: left;
+			}
+		}
+
+		input.submit-btn{
+			@include button;
+			@include button-box-shadow-black();
+			transition: all 0.2s;
+			color: $heading-color; 
+			background-color: transparent;
+			width: 160px;
+			outline: none;
+			border: none;
+			display: block;
+			margin: 60px 0;
+			&:hover, &:focus{
+				@include button-box-shadow-orange(#eee);
+				color: $bg-color-light;
+				background-color: $highlight-color ;
+			}
+		}
+	}
+	
+	/*
+	 * Single Page Sidebar Style
+	 */
+	aside{
+		background-color: $bg-color-light;
+		padding: 25px;
+		a{
+			color: $text-color;
+			transition: color .2s ease-in;
+			&:hover{
+				color: $highlight-color;
+			}
+		}
+
+		hr{
+			margin-bottom: 40px;
+		}
+		div.widget{
+			margin-bottom: 50px;
+		}
+
+		div.instragram{
+			a{
+				display: inline-block;
+				img{
+					padding: 5px 0;
+					max-width: 70px;
+				}
+			}
+		}
+
+		ul{
+			list-style: none;
+			padding: 0;
+			li{
+				margin-bottom: 20px;
+
+				&:last-child{
+					margin-bottom: 0;
+				}
+
+				a:before{
+					font-family: FontAwesome;
+					content: "\f0da";
+					margin-right: 5px;
+				}
+			}
+		}
+	}
+}
+

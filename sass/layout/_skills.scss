@@ -1,0 +1,57 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * 11. Skills Section Styles.
+ * ----------------------------------------------------------------------------------------
+ */
+
+section.rex-skills{
+	padding: 0;
+	background-color: $bg-color-light;
+	div.container-fluid{
+		margin: $container-margin auto;
+		padding: 0;
+	}
+	.left{
+		text-align: left;
+	}
+	.right{
+		text-align: right;
+		img{
+			float: right;
+		}
+	}
+	/*
+	 * Skill item style
+	 */
+	div.rex-skill-item{
+		max-width: 600px;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		clear: right;
+		header{
+			width: 100%;
+		}
+		p{
+			color: $text-color;
+			text-transform: uppercase;
+			display: inline-block;
+			text-align: left;
+			&:last-child{
+				text-align: right;
+				float: right;
+			}
+		}
+		/* skill progress container */
+		div.rex-progress-container{
+			height: 12px;
+			background-color: #e0e0e0;
+
+			div.rex-progress{
+				background-color: $highlight-color;
+				height: 11px;
+				margin: 0 auto;
+				width: 0;
+			}
+		}
+	}
+}

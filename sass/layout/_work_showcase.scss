@@ -1,0 +1,329 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * 07. Work Section (Clients and Portfolio Showcase)
+ * ----------------------------------------------------------------------------------------
+ */
+
+section.rex-works-showcase{
+	/*
+	 * Portfolio Modal (Pop-up) Style
+	 */
+	.rex-modal {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		height: auto;
+		z-index: 2000;
+		visibility: hidden;
+		backface-visibility: hidden;
+		transform: translateX(-50%) translateY(-50%);
+		background-color: $bg-color-light;
+
+		.rex-content{
+			position: relative;
+			img{
+				padding-left: 40px;
+			}
+		}
+
+		button.rex-close-modal{
+			position: absolute;
+			right: 0;
+			top: 0;
+			border: none;
+			outline: none;
+			background-color: rgba(0,0,0,.1);
+			color: $text-color;
+			transition: all 0.2s;
+			padding: 5px 10px;
+
+			&:hover{
+				color: $heading-color;
+				background-color: rgba(0,0,0,.2);
+
+			}
+		}
+		hr{
+			margin-bottom: 15px !important;
+		}
+
+		img{
+			margin-top: 40px;
+			padding-bottom: 40px !important;
+			max-height: 370px;
+		}
+
+		figcaption{
+			padding: 40px 30px;
+			background-color: #fff;
+			hr{
+				margin: 0;
+			}
+			h3, h4, p{
+				text-align: left;
+			}
+			h3{
+				margin-bottom: 10px;
+				margin-top: 0;
+				color: $text-color-dark;
+			}
+			h4{
+				margin-top: 0;
+				margin-bottom: 15px;
+				color: $text-color-dark;
+			}
+			p{
+				line-height: 2;
+				margin: 0;
+			}
+		}
+	}
+
+	.rex-show {
+		visibility: visible;
+	}
+
+	.rex-overlay {
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		visibility: hidden;
+		top: 0;
+		left: 0;
+		z-index: 1000;
+		opacity: 0;
+		background: rgba(0,0,0,0.8);
+		transition: all 0.3s;
+	}
+
+	.rex-show ~ .rex-overlay {
+		opacity: 1;
+		visibility: visible;
+	}
+
+	/*
+	 * Clients Logo Carousel 
+	 */
+	div.rex-clients-showcase{
+		background: url(../images/white_wall.png);
+		padding-top: 80px;
+		.owl-carousel .owl-wrapper-outer{
+			margin-left: 1px;
+		}
+		ul{
+			padding: 0;
+			margin: 0;
+			overflow: hidden;
+			list-style: none;
+			min-height: 120px;
+			border-top: 1px solid #e0e0e0;
+			border-bottom: 1px solid #e0e0e0;
+			li{
+				height: 120px;
+				padding-top: 46px;
+				padding-bottom: 46px;
+				border-right: 1px solid #e0e0e0;
+				transition: all 0.2s;
+				// border-right: 1px solid $text-color;
+				cursor: url(../images/cusor-icon.png), auto;
+
+				&:hover{
+					-webkit-box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,1);
+					-moz-box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,1);
+					box-shadow: inset 0px 0px 10px 0px rgba(255,255,255,1);
+					background-color: rgba(255, 255, 255, .5);
+				}
+				a{
+					display: block;
+				}
+				img{
+					margin: 0 auto;
+					@include grayscale-img;
+					transition: all 0.2s;
+					opacity: .5;
+				}
+
+				&:hover img{
+					opacity: 1;
+					filter: none;
+					-webkit-filter: none;
+				}
+			}
+		}
+	} // div.rex-clients-showcase
+	
+	/*
+	 * Portfolio Showcase Style
+	 */
+	div.rex-portfolio-showcase{
+		background-image: url(../images/white_wall.png);
+		background-position: top;
+		background-repeat: repeat-x;
+		background-color: $bg-color-light-gray;
+
+		/* Portfolio Heading */
+		h3{
+			margin-top: 0;
+		}
+		/* horizontal line */
+		hr{
+			@include line-heading;
+			margin-bottom: 70px;
+		}
+		
+		/* Portfolio Filter Style */
+		div.container{
+			margin-top: 95px;
+			padding: 0;
+			margin-bottom: $container-margin;
+
+			div.portfolio-filter{
+				text-align: center;
+				margin: 0 auto;
+				margin-bottom: 60px;
+				div{
+					cursor: pointer;
+					display: inline-block;
+					margin-right: 10px;
+					padding: 10px 20px;
+					margin-bottom: 10px;
+					color: $text-color;
+					transition: all .2s ease-out;
+					font-size: 1.14em;
+
+					&.active, &:hover{
+						color: $bg-color-light;
+						background-color: $highlight-color;
+					}
+				}
+			} //div.portfolio-filter
+		}// Container
+
+		/* Portfolio Figure */
+		figure{
+			margin-bottom: 15px;
+			padding: 0;
+			.col-pad{
+				margin-right: 15px;
+				overflow: hidden;
+			}
+			&:nth-child(3n) .col-pad{
+				margin-right: 0;
+			}
+
+			img{
+				padding: 0;
+			}
+		}
+		
+		h4.price{
+			margin-top: 30px;
+			color: $highlight-color;
+		}
+		/*
+		 * Featured/First Portfolio
+		 */
+		.rex-featured-portfolio{
+			animation-duration: 1.2s;
+			background-color: #fff;
+			img{
+				padding: 0;
+			}
+			figcaption{
+				padding: 70px 30px 0 70px;
+				background-color: #fff;
+				hr{
+					margin: 0;
+				}
+				h3, h4, p{
+					text-align: left;
+				}
+				h3{
+					margin: 25px 0;
+					margin-top: 40px;
+					color: $text-color-dark;
+				}
+				h4{
+					margin-top: 0;
+					margin-bottom: 15px;
+					color: $text-color-dark;
+				}
+				h4.price{
+					margin-top: 30px;
+					color: $highlight-color;
+				}
+				p{
+					line-height: 1.8;
+					margin: 0;
+				}
+			}
+		}
+		/*
+		 * Portfolio Container
+		 */
+		div.rex-portfolios{
+			position: relative;
+			img{
+				cursor: pointer;
+				transition: all 0.3s;
+				margin: 0 auto;
+			}
+			/* Portfolio Figure */
+			figure{
+				max-height: 293px;
+				overflow: hidden;
+				&:hover figcaption{
+					display: flex;;
+					-webkit-animation-name: zoomIn;
+					        animation-name: zoomIn;
+					
+				}
+
+				&:hover img{
+					transform: scale(1.2);
+				}
+			}
+			/* Portfolio Caption */
+			figcaption{
+				position: absolute;
+				top: 0;
+				justify-content: center;
+				flex-direction: column;
+				display: none;
+				width: 100%;
+				height: 100%;
+				margin-right: 10px;
+				cursor: pointer;
+				transition: all .4s ;
+				-webkit-animation-duration: .5s;
+				        animation-duration: .5s;
+	
+				background-color: rgba( red($highlight-color), green($highlight-color), blue($highlight-color), 0.85);
+				border: 15px solid transparent;
+				box-shadow: inset 0px 0px 0px 1px rgba( red($highlight-color), green($highlight-color), blue($highlight-color), 0.4), inset 0px 0px 0px 5px rgba( red($highlight-color), green($highlight-color), blue($highlight-color), 0.85), inset 0px 0px 0px 9px #fff;
+				-moz-box-shadow: inset 0px 0px 0px 1px rgba( red($highlight-color), green($highlight-color), blue($highlight-color), 0.4), inset 0px 0px 0px 5px rgba( red($highlight-color), green($highlight-color), blue($highlight-color), 0.85), inset 0px 0px 0px 9px #fff;
+				-webkit-box-shadow: inset 0px 0px 0px 1px rgba( red($highlight-color), green($highlight-color), blue($highlight-color), 0.4), inset 0px 0px 0px 5px rgba( red($highlight-color), green($highlight-color), blue($highlight-color), 0.85), inset 0px 0px 0px 9px #fff;
+
+				text-align: center;
+				h3,h4{
+					color: $bg-color-light;
+					margin: 0;
+				}
+				h4{
+					text-transform: none;
+					font-style: italic;
+					letter-spacing: 2px;
+					font-weight: normal;
+					font-size: 1em;
+				}
+				h3{
+					font-size: 1.14em;
+				}
+				hr, p{
+					display: none;
+				}
+			}
+		}
+
+	} // div.rex-portfolio-showcase
+}

@@ -1,0 +1,178 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * 01. Base styles.
+ * ----------------------------------------------------------------------------------------
+ */
+html, body{
+	overflow-x: hidden; /* Stops horizontal scrolling. */
+}
+body {
+	-webkit-font-smoothing: antialiased;
+	font-family: $fontfamily;
+	color: $text-color;
+	font-size: 14px;
+}
+
+/* Typography
+   ========= */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+	color: $heading-color;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: normal;
+}
+h1{
+	font-size: 3em;
+}
+h2{
+	font-size: 2.29em;
+}
+h3{
+	font-size: 1.71em;
+}
+h4{
+	font-size: 1.14em;
+}
+
+p {
+	font-weight: normal;
+	font-size: 1em;
+	a {
+		text-decoration: none;
+	}
+}
+a{
+	color: $link-color;
+	text-decoration: none;
+	transition: all 0.2s ease-in;
+	outline: 0;
+
+	&:hover{
+		color: $link-hover-color;
+		text-decoration: none;
+	}
+}
+a:hover, a:active, a:focus {
+  outline: 0;
+}
+hr{
+	background-color: $text-color;
+	min-height:1px;
+}
+
+ul{
+	padding-left: 0;
+}
+
+blockquote {
+	margin: 0;
+
+	font-style: italic;
+
+	cite {
+		font-size: .75rem;
+		font-style: normal;
+
+		&:before {
+			content: "- ";
+		}
+	}
+}
+figure{
+	margin: 0;
+}
+iframe{
+	width: 100%;
+	border: none;
+}
+/* Animation Speed */
+.animated {
+  animation-duration: .7s;
+}
+/* Scrool UP
+   ========= */
+#rex-scrollUp {
+	bottom: 20px;
+	right: 20px;
+	width: 38px;
+	height: 38px;
+	line-height: 38px;
+	color: $heading-color;
+	background-color: $bg-color-dark;
+	font-size: 16px;
+	text-align: center;
+	transition: all 0.2s ease-in;
+	&:hover{
+		height: 42px;
+		background-color: $highlight-color;
+	}
+}
+/* Center Carousel
+   =============== */
+.owl-carousel{
+	margin-left: auto;
+	margin-right: auto;
+}
+/* Selection Color
+   =============== */
+::selection {
+  background: $highlight-color; /* WebKit/Blink Browsers */
+  color: $heading-color;
+}
+::-moz-selection {
+  background: $highlight-color; /* Gecko Browsers */
+  color: $heading-color;
+}
+/* Center Small Column
+   =================== */
+.col-md-6.center-block{
+	float: none;
+}
+figure{
+	margin: 0;
+}
+/* Boxed Layout Style
+   ================== */
+.boxed{
+	background-image: url(../images/old_wall.png);
+	.container-fluid{
+		max-width: 1200px;
+	}
+
+	div.sticky-header{
+		margin: 0;
+		left: 0;
+		right: 0;
+	}
+}
+/* Animated SVG Loader Style
+   ========================= */
+div.loading{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #fff;
+	z-index: 9999999999999;
+
+	img{
+		position: fixed;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+/* SVG Backup for Older Browser */
+.no-svg div.loading{
+	background-image: url(../images/AjaxLoader.gif) no-repeat;
+}
+/* hide scroolUp when Loading */
+.loading #rex-scrollUp{
+	display: none !important;
+}

@@ -1,0 +1,101 @@
+/**
+ * ----------------------------------------------------------------------------------------
+ * 09. Features Section Styles.
+ * ----------------------------------------------------------------------------------------
+ */
+
+section.rex-features{
+	padding: 0;
+	background-color: $bg-color-light-gray;
+	div.container{
+		margin-top: $container-margin;
+	}
+	div.row{
+		overflow: hidden;
+	}
+	.owl-carousel .owl-wrapper-outer{
+		margin-left: 10px;
+	}
+	/* Feature Item */
+	div.feature-item{
+		padding: 0;
+		margin: 0 auto;
+		cursor: pointer;
+		transition: all 0.3s ease-out;
+		/* inner div for adding margin without modifying bootstrap grid css */
+		.col-pad{
+			background-color: $bg-color-dark;
+			margin-right: 20px;
+			margin-bottom: 10px;
+			transition: all 0.4s;
+			padding-bottom: 50px;
+			height: 300px;
+			overflow: hidden;
+		}
+		/* Triangle */
+		div.triangle{
+			@include triangle($bg-color-light);
+			transition: all 0.3s ease-out;
+		}
+		/* image icon */
+		img{
+			display: block;
+			margin: 0 auto;
+			opacity: .5;
+			transition: opacity .2s;
+		}
+
+		/* Hover Effect */
+		&:hover{
+			cursor: url(../images/cusor-icon.png), auto;
+			.col-pad{
+				background-color: $bg-color-light;
+			}
+			div.triangle{
+				@include triangle;
+			}
+			img{
+				opacity: 1;
+			}
+		}
+		/* horizontal line */
+		hr{
+		  background-color: rgb(224, 224, 224);
+		  width: 30px;
+		  height: 3px;
+		}
+
+		h4{
+			margin: 25px 0;
+		}
+		p{
+			margin: 0;
+			padding: 0 20px;
+			text-align: center;
+			line-height: 1.8;
+		}
+	}
+	/*
+	 * Owl Slider Buttons Style
+	 */
+	div.owl-buttons{
+		margin-top: 60px;
+		text-align: center;
+		/* button div */
+		div{
+			display: inline-block;
+			background-color: $heading-color;
+			color: $bg-color-light;
+			padding: 5px 8px;
+			font-size: 10px;
+			transition: all 0.2s ease-out;
+			&:first-child{
+				margin-right: 10px;
+			}
+
+			&:hover{
+				background-color: $highlight-color;
+			}
+		}
+	}
+}
