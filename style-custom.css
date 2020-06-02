@@ -1,0 +1,139 @@
+/* This is for all the buttons in the homepage */
+.button {
+  background-color: var(--themecolor);
+}
+
+/* This changes the color of text in the top menu */
+#primary-menu ul li:hover > a,
+#primary-menu ul li.current > a {
+  color: var(--themecolor);
+}
+
+/* This changes the color of text on the marque type thing where text changes */
+h1 > span:not(.nocolor):not(.badge),
+h2 > span:not(.nocolor):not(.badge),
+h3 > span:not(.nocolor):not(.badge),
+h4 > span:not(.nocolor):not(.badge),
+h5 > span:not(.nocolor):not(.badge),
+h6 > span:not(.nocolor):not(.badge) {
+  color: var(--themecolor);
+}
+
+/* This changes color of text selection */
+::selection {
+  background: var(--themecolor);
+}
+
+#logo .retina-logo {
+  padding-left: 20px;
+}
+
+.set-theme-color {
+  color: var(--themecolor) !important;
+}
+
+#signup-form-container {
+  padding: 20px 5px 0px 20px;
+}
+
+#signup-form-container form {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#modal-embed-map-area {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#location-check-text-box1-button {
+}
+
+#location-check-text-box1 {
+  height: 46px;
+}
+
+/* Adding color to the dots in the testimonial section */
+#user-testimonial-carousel .owl-dot {
+  background-color: var(--themecolor);
+}
+
+/* Adding color to the arrow on the testimonial section */
+#user-testimonial-carousel .owl-nav [class*="owl-"]:hover {
+  background-color: var(--themecolor) !important;
+}
+
+.irs-from,
+.irs-to,
+.irs-single,
+.irs-bar {
+  background-color: var(--themecolor);
+}
+
+.irs-single::after {
+  border-top-color: var(--themecolor);
+}
+
+#calculator-service-fees-display-section {
+  margin-right: 0px;
+}
+
+/* Change calculator switch color */
+input.switch-toggle-round:checked + label:before {
+  background-color: var(--themecolor);
+}
+
+@media screen and (max-width: 768px) {
+  #secondary-button-text1-for-non-mobile {
+    display: none;
+  }
+}
+
+a {
+  color: inherit;
+}
+
+.no-webp #slider {
+  background: #fff url("images/hero/hero-1.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.webp #slider {
+  background: #fff url("images/hero/hero-1.webp") center center no-repeat;
+  background-size: cover;
+}
+
+.no-webp #pricing-section {
+  background: url("images/sections/4.png") no-repeat center top;
+  background-size: cover;
+  padding: 140px 0 0;
+}
+
+.webp #pricing-section {
+  background: url("images/sections/4.webp") no-repeat center top;
+  background-size: cover;
+  padding: 140px 0 0;
+}
+
+/* FAQ section */
+.no-webp .section-0 {
+  background: url("images/sections/5.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+.webp .section-0 {
+  background: url("images/sections/5.webp") no-repeat center center;
+  background-size: cover;
+  padding: 80px 0;
+}
+
+/* FAQ background for marketing page */
+.marketing.section-0 {
+  background: url("images/hero/hero-3.svg") no-repeat center center;
+  background-size: cover;
+  padding: 80px 0;
+}

@@ -1,937 +1,449 @@
-<!doctype html>
-<html class="no-js" lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Lal Tomato</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="icon" href="favicon.ico">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="author" content="SemiColonWeb" />
 
-    <!-- Vendor CSS -->
-    <link rel="stylesheet" href="css/vendor/bootstrap.css">
-    <link rel="stylesheet" href="css/vendor/font-awesome.css">
-    <link rel="stylesheet" href="css/vendor/animate.css">
-    <link rel="stylesheet" href="css/vendor/owl.carousel.css">
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Modernizr -->
-    <script src="js/vendor/modernizr-2.8.3.min.js"></script> 
-  </head>
-  <body class="loading">
-    <!--[if lt IE 8]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
-    
-    <!-- Loader to display before content Load-->
-    <div class="loading"><img src="images/puff.svg" alt=""></div>
+	<!-- Stylesheets
+	============================================= -->
+	<link href="http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,900" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
 
-    <!-- Header -->
-    <header id="rex-home" class="container-fluid">
-      <div class="container"> <!-- Header container for Inner Box -->
-        <div class="row sticky-header" id="rex-sticky"> <!-- Row for Social Profiles, Brand and Navigation -->
-          
-          <div class="col-sm-4 rex-social-profiles">
-            <ul class="social-profiles">
-              <li><a class="twitter" href="#"><i  class="fa fa-twitter"></i></a></li>
-              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-            </ul>
-          </div>
-    
-          <div class="col-sm-4 rex-brand-logo">
-            <a href="index.html">
-              <img src="images/logo.png" data-sticky-img="http://placehold.it/121x53" alt="Lal Tomato">
-            </a>
-          </div>
-    
-          <div class="col-sm-4 rex-navigation">
-            <div class="search-bar">
-              <form action="#">
-                <input id="search" name="search" type="text" placeholder="What're you looking for ?">
-                <input id="search_submit" value="Search" type="submit">
-              </form>
-            </div>
-            <button class="trigger-nav navbar-right" id="trigger-nav" type="button"><i class="fa fa-bars"></i></button>
-            <!-- Off Canvas Navigation -->
-            <div class="rex-navbar overlay-door" id="rex-navbar">
-              <button type="button" class="overlay-close">Close</button>
-              <nav>
-                <ul>
-                  <li class="active"><a href="#rex-home">Home</a></li>
-                  <li><a href="#rex-service">Service</a></li>
-                  <li><a href="#rex-work">Our WORKS</a></li>
-                  <li><a href="#rex-history">HISTORY</a></li>
-                  <li><a href="#rex-feature">Feature</a></li>
-                  <li><a href="#rex-team">OUR TEAM</a></li>
-                  <li><a href="#rex-skills">OUr Skills</a></li>
-                  <li><a href="#rex-price-plan">PLan &amp; PRICING </a></li>
-                  <li><a href="#rex-testimonial">TESTIMONIAL</a></li>
-                  <li><a href="#rex-blog">BLOG</a></li>
-                  <li><a href="#rex-contact">Contact</a></li>
-                </ul>
-              </nav>
-            </div>
-            <!-- End of Navigation -->
-          </div>
-    
-        </div> <!-- End of Row for Social Profiles, Brand and Navigation -->
-      </div> <!-- End Header container -->
-    </header>
-    <!-- End of Header -->
-    
-    <!-- Section to show Slider, Video or Image -->
-    <section class="container-fluid slider rex-show-image">
+	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+	<link rel="stylesheet" href="css/animate.css" type="text/css" />
+	<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
 
-      <div class="row">
-        
-        <!-- Image/Parallax Image-->
-        <div class="col-md-12 rex-image">
-          <div class="rex-heading text-center">
-            <h1>Creative <span class="rex-fancy-font">lal tomato</span> template </h1>
-            <h3 class="rex-tagline">Our Theme is Super Clean &amp; Creative</h3>
-            <hr>
-          </div>
-          <img class="slider_img img-responsive"  src="http://placehold.it/1800x998" alt="">
-          <a href="#rex-service" class="rex-scrool-down wow bounce" data-wow-iteration="9999" data-wow-duration="1.5s" data-wow-delay="1.5s">
-            <img src="http://placehold.it/32x32" alt="">
-          </a>
-          <!-- Uncomment the following div and add '.rex-show-parallax-image' on top of this section
-           if you want to use parallax image -->
-          <!-- <div class="rex-parallax-image" data-image-src="http://placehold.it/1800x998" data-stellar-background-ratio="0.5"></div> -->
-        </div>
-        <!-- End of Image/Parallax Image-->
-        
-        <!-- Video -->
-        <div class="col-md-12 rex-bg-video">
-          <div id="rex-bg-video"></div>
-          <div class="video-overlay"></div>
-          <div class="rex-heading">
-            <h1>Creative <span>lal tomato</span> template </h1>
-            <h3 class="rex-tagline">Our Theme is Super Clean &amp; Creative</h3>
-            <hr  class="wow" data-wow-delay="1.5s">
-            <div class="rex-call-to-action">
-              <a href="#rex-service">See More</a>
-              <a href="#">Buy Now</a>
-            </div>
-          </div>
-        </div>
-        <!-- End of Video -->
-        
-        <!-- Image Slider -->
-        <div class="col-md-12 rex-slider" id="rex-slider">
-        
-          <div class="slide">
-            <div class="rex-heading">
-              <h1>we are lal tomato</h1>
-              <h3 class="rex-tagline">Designing <i class="fa fa-caret-right"></i> Developing <i class="fa fa-caret-right"></i>  Branding</h3>
-            </div>
-            <img class="slider_img img-responsive wow fadeInDown"  src="http://placehold.it/1800x998" alt="">
-          </div>
+	<!-- Bootstrap Switch CSS -->
+	<link rel="stylesheet" href="css/components/bs-switches.css" type="text/css" />
 
-          <div class="slide">
-            <div class="rex-heading">
-              <h1>Awesome <span>HTML5</span> theme</h1>
-              <h3 class="rex-tagline">We Create Awesome &amp; Outstanding Theme</h3>
-            </div>
-            <img class="slider_img img-responsive wow fadeInDown"  src="http://placehold.it/1800x998" alt="">
-          </div>  
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+	<meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
 
-          <div class="slide">
-            <div class="rex-heading">
-              <h1>Perfect for your Website</h1>
-              <h3 class="rex-tagline"><i class="fa fa-caret-right"></i> Simple  <i class="fa fa-caret-right"></i> Unique   <i class="fa fa-caret-right"></i> Responsive</h3>
-            </div>
-            <img class="slider_img img-responsive wow fadeInDown"  src="http://placehold.it/1800x998" alt="">
-          </div>  
-        </div>
-        <!-- Image Slider -->
+	<!-- Seo Demo Specific Stylesheet -->
+	<link rel="stylesheet" href="css/colors.php?color=FE9603" type="text/css" /> <!-- Theme Color -->
+	<link rel="stylesheet" href="demos/seo/css/fonts.css" type="text/css" />
+	<link rel="stylesheet" href="demos/seo/seo.css" type="text/css" />
+	<!-- / -->
 
 
-      </div>
-    </section>
-    <!-- End  Slider Section -->
-    
-    <!-- Service Section -->
-    <section id="rex-service" class="container-fluid rex-services">
-      <div class="container"> <!-- Service Container -->
-        <h3 class="wow fadeInUp hidden">OUR Services</h3>
-        <hr class="wow fadeInUp hidden"> 
-        <div class="row"> <!-- div.row -->
-          
-          <div class="col-md-6 rex-service-image" data-wow-delay=".5s"> <!-- Service Image -->
-            <img class="img-responsive" data-id="design" src="http://placehold.it/571x292" alt="">
-            <img class="img-responsive" data-id="develop" src="http://placehold.it/571x292" alt="">
-            <img class="img-responsive" data-id="branding" src="http://placehold.it/571x292" alt="">
-          </div> <!-- End of Service Image -->
-          
-          <div class="col-md-6 rex-service-tabs" data-wow-delay=".5s" role="tabpanel"> <!-- Tab Panel Column -->
-            
-            <ul class="nav nav-tabs" role="tablist"> <!-- Nav tabs -->
-              
-              <li role="presentation">
-                <a href="#design" aria-controls="design" role="tab">
-                  <div>
-                    <img src="http://placehold.it/42x32" alt="">
-                    <hr>
-                  </div>
-                  Design
-                </a>
-              </li>
-          
-              <li role="presentation">
-                <a href="#develop" aria-controls="develop" role="tab">
-                  <div>
-                    <img src="http://placehold.it/42x32" alt="">
-                    <hr>
-                  </div>
-                  Develop
-                </a>
-              </li>
-          
-              <li role="presentation">
-                <a href="#branding" aria-controls="branding" role="tab">
-                  <div>
-                    <img src="http://placehold.it/42x32" alt="">
-                    <hr>
-                  </div>
-                  Branding
-                </a>
-              </li>
-          
-            </ul> <!-- End of Nav tabs -->
-          
-            <!-- <div class="tab-content">Tab Panels -->
-              <div role="tabpanel" class="tab-pane" id="design">
-                <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor 
-                  aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat 
-                  nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit 
-                  amet mauris. Morbi accumsan ipsum velit. 
-                </p>
-              </div>
-              <div role="tabpanel" class="tab-pane" id="develop">
-                <p>
-                  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure.
-                </p>
-              </div>
-              <div role="tabpanel" class="tab-pane" id="branding">
-                <p>
-                  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
-                </p>
-              </div>
-            </div> <!-- End of Tab Panels -->
-          <!-- </div>Tab Panel Column -->
-        </div> <!-- div.row -->
-      </div> <!-- Service Container -->
-    </section>
-    <!-- Service Section -->
-    
-    <!-- Work Section to show Clients and Portfolio -->
-    <section id="rex-work" class="container-fluid rex-works-showcase">
+		<!-- Custom User Created Stylesheet -->
+	<link rel="stylesheet" href="style-custom.css" type="text/css" />
 
-      <div class="row rex-clients-showcase">
-        <div class="container">
-          <ul  id="rex-client-carousel">
-            <li>
-              <a href="#"><img class="img-responsive" src="http://placehold.it/142x32" alt=""></a>
-            </li>
-            <li>
-              <a href="#"><img class="img-responsive" src="http://placehold.it/142x32" alt=""></a>
-            </li>
-            <li>
-              <a href="#"><img class="img-responsive" src="http://placehold.it/142x32" alt=""></a>
-            </li>
-            <li>
-              <a href="#"><img class="img-responsive" src="http://placehold.it/142x32" alt=""></a>
-            </li>
-            <li>
-              <a href="#"><img class="img-responsive" src="http://placehold.it/142x32" alt=""></a>
-            </li>
-            <li>
-              <a href="#"><img class="img-responsive" src="http://placehold.it/142x32" alt=""></a>
-            </li>
-            <li>
-              <a href="#"><img class="img-responsive" src="http://placehold.it/142x32" alt=""></a>
-            </li>
-            <li>
-              <a href="#"><img class="img-responsive" src="http://placehold.it/142x32" alt=""></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    
-      <div class="row rex-portfolio-showcase">
-        <div class="container">
-          <h3>OUR WORKS</h3>
-          <hr>
-          <div class="row">
-            <div class="col-md-12 portfolio-filter">
-              <div class="filter" data-filter="all">All</div>
-              <div class="filter" data-filter="identity">Identity</div>
-              <div class="filter" data-filter="ui">UI/UX</div>
-              <div class="filter" data-filter="photography">Photography</div>
-              <div class="filter" data-filter="branding">Branding</div>
-            </div>
-          </div>
+	<!-- Document Title
+	============================================= -->
+	<title>Lead Bee | Real Estate Leads</title>
 
-          <figure class="row rex-featured-portfolio" role="tabpanel" id="portfolio-intro">
-            <img class="col-md-6 img-responsive" src="http://placehold.it/600x368" alt="">
-            <figcaption class="col-md-6">
-              <h3 class="rex-portfolio-name">HAPPY GIRL</h3>
-              <hr>
-              <h4 class="rex-portfolio-category">Photography</h4>
-              <p>
-                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh 
-                aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit 
-                nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
-                amet mauris. Morbi accumsan ipsum velit. 
-              </p>
-            </figcaption>
-          </figure>
-    
-          <div class="row rex-portfolios" role="tabpanel" id="rex-portfolios">
-    
-            <figure class="identity ui branding col-lg-4 col-sm-6 rex-portfolio-item wow fadeInUp" data-wow-delay="0s">
-              <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-              
-              <figcaption>
-                <h3 class="rex-portfolio-name">HAPPY GIRL</h3>
-                <hr>
-                <h4 class="rex-portfolio-category">UI/UX Design</h4>
-                <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh 
-                  aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit 
-                  nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
-                  amet mauris. Morbi accumsan ipsum velit. 
-                </p>
-              </figcaption>
-            </figure>
-    
-            <figure class="ui photography identity col-lg-4 col-sm-6 rex-portfolio-item wow fadeInUp" data-wow-delay=".25s">
-              <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-              
-              <figcaption>
-                <h3 class="rex-portfolio-name">HAPPY GIRL</h3>
-                <hr>
-                <h4 class="rex-portfolio-category">Branding</h4>
-                <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh 
-                  aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit 
-                  nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
-                  amet mauris. Morbi accumsan ipsum velit. 
-                </p>
-              </figcaption>
-            </figure>
-    
-            <figure class="branding ui photography col-lg-4 col-sm-6 rex-portfolio-item wow fadeInUp" data-wow-delay=".5s">
-              <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-              
-              <figcaption>
-                <h3 class="rex-portfolio-name">HAPPY GIRL</h3>
-                <hr>
-                <h4 class="rex-portfolio-category">UI/UX Design</h4>
-                <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh 
-                  aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit 
-                  nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
-                  amet mauris. Morbi accumsan ipsum velit. 
-                </p>
-              </figcaption>
-            </figure>
-    
-            <figure class="photography ui branding col-lg-4 col-sm-6 rex-portfolio-item wow fadeInUp" data-wow-delay="0s">
-              <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-              
-              <figcaption>
-                <h3 class="rex-portfolio-name">HAPPY GIRL</h3>
-                <hr>
-                <h4 class="rex-portfolio-category">Identity</h4>
-                <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh 
-                  aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit 
-                  nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
-                  amet mauris. Morbi accumsan ipsum velit.
-                </p>
-              </figcaption>
-            </figure>
-    
-            <figure class="photography identity col-lg-4 col-sm-6 rex-portfolio-item wow fadeInUp" data-wow-delay=".5s">
-              <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-              
-              <figcaption>
-                <h3 class="rex-portfolio-name">HAPPY GIRL</h3>
-                <hr>
-                <h4 class="rex-portfolio-category">Photography</h4>
-                <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh 
-                  aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit 
-                  nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
-                  amet mauris. Morbi accumsan ipsum velit. Nec sagittis sem nibh 
-                  id elit. Duis sed odio sit amet nibh vulputate 
-                </p>
-              </figcaption>
-            </figure>
-    
-            <figure class="branding identity col-lg-4 col-sm-6 rex-portfolio-item wow fadeInUp" data-wow-delay=".75s">
-              <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-              
-              <figcaption>
-                <h3 class="rex-portfolio-name">HAPPY GIRL</h3>
-                <hr>
-                <h4 class="rex-portfolio-category">Branding</h4>
-                <p>
-                  This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh 
-                  aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit 
-                  nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate
-                  amet mauris. Morbi accumsan ipsum velit. Nec sagittis sem nibh 
-                  id elit. Duis sed odio sit amet nibh vulputate 
-                </p>
-              </figcaption>
-            </figure>
-    
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End of Work Section -->
-    
-    <!-- History Section -->
-    <section id="rex-history" class="container-fluid rex-our-history">
-      <div class="row">
-        <div class="container">
-          <div class="row wow fadeInUp">
-            <figure class="col-md-3">
-              <img class="img-responsive" src="http://placehold.it/240x394" alt="">
-            </figure>
-            <div class="col-md-9 rex-history-details">
-              <h3>LAL TOMATO HISTORY</h3>
-              <hr>
-              <p>
-                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis 
-                bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit 
-                amet mauris. Morbi accumsan ipsum velit. 
-              </p>
-              <a href="#rex-team">meet our team</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End of History Section -->
+</head>
 
-    <!-- Features Section -->
-    <section id="rex-feature" class="container-fluid rex-features">
-      <div class="row">
-        <div class="container">
-          <div class="row" id="rex-feature-carousel">
-            
-            <div class="feature-item">
-              <div class="col-pad">
-                <div class="triangle"></div>
-                <img src="http://placehold.it/32x32" alt="">
-                <hr>
-                <h4>Clean &amp; organized</h4>
-                <p>
-                  This is Photoshop's version  of Lorem
-                  Proin gravida nibh vel velit auctor
-                  aenean sollicitudin.
-                </p>
-              </div>
-            </div>
-            
-            <div class="feature-item">
-              <div class="col-pad">
-                <div class="triangle"></div>
-                <img src="http://placehold.it/32x32" alt="">
-                <hr>
-                <h4>Parallax Design</h4>
-                <p>
-                  This is Photoshop's version  of Lorem
-                  Proin gravida nibh vel velit auctor
-                  aenean sollicitudin.
-                </p>
-              </div>
-            </div>
-            
-            <div class="feature-item">
-              <div class="col-pad">
-                <div class="triangle"></div>
-                <img src="http://placehold.it/32x32" alt="">
-                <hr>
-                <h4>24/7 Support</h4>
-                <p>
-                  This is Photoshop's version  of Lorem
-                  Proin gravida nibh vel velit auctor
-                  aenean sollicitudin.
-                </p>
-              </div>
-            </div>
-        
-            <div class="feature-item active">
-              <div class="col-pad">
-                <div class="triangle"></div>
-                <img src="http://placehold.it/32x32" alt="">
-                <hr>
-                <h4>Clean &amp; organized</h4>
-                <p>
-                  This is Photoshop's version  of Lorem
-                  Proin gravida nibh vel velit auctor
-                  aenean sollicitudin.
-                </p>
-              </div>
-            </div>
-            
-            <div class="feature-item">
-              <div class="col-pad">
-                <div class="triangle"></div>
-                <img src="http://placehold.it/32x32" alt="">
-                <hr>
-                <h4>Parallax Design</h4>
-                <p>
-                  This is Photoshop's version  of Lorem
-                  Proin gravida nibh vel velit auctor
-                  aenean sollicitudin.
-                </p>
-              </div>
-            </div>
-            
-            <div class="feature-item">
-              <div class="col-pad">
-                <div class="triangle"></div>
-                <img src="http://placehold.it/32x32" alt="">
-                <hr>
-                <h4>24/7 Support</h4>
-                <p>
-                  This is Photoshop's version  of Lorem
-                  Proin gravida nibh vel velit auctor
-                  aenean sollicitudin.
-                </p>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Feature Section -->
-    
-    <!-- Team Section -->
-    <section id="rex-team" class="container-fluid rex-team">
-      <div class="row">
-        <div class="container">
-          <div class="row">
-            <h3>MEET OUR TEAM</h3>
-            <hr>
-            
-            <figure class="col-md-4 wow fadeInUp" data-wow-delay="0s">
-              <img class="img-responsive" src="http://placehold.it/327x324" alt="">
-              <figcaption class="staff-info">
-                <h4 class="name">David Bertschi</h4>
-                <hr>
-                <p class="position">UI/UX Designer</p>
-            
-                <div class="hover-card">
-                  <p>
-                    This is Photoshop's version  of lorem
-                    proin gravida nibh vel velit auctor
-                    aenean sollicitudin.
-                  </p>
-                  <hr>
-                  <ul class="social-profiles">
-                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="behance" href="#"><i class="fa fa-behance"></i></a></li>
-                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                  </ul>
-                </div>
-              </figcaption>
-            </figure>
-            
-            <figure class="col-md-4 wow fadeInUp" data-wow-delay=".5s">
-              <img class="img-responsive" src="http://placehold.it/327x324" alt="">
-              <figcaption class="staff-info">
-                <h4 class="name">Chirstain DeO</h4>
-                <hr>
-                <p class="position">CEO</p>
-            
-                <div class="hover-card">
-                  <p>
-                    This is Photoshop's version  of lorem
-                    proin gravida nibh vel velit auctor
-                    aenean sollicitudin.
-                  </p>
-                  <hr>
-                  <ul class="social-profiles">
-                    <li><a class="twitter"  href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="behance"  href="#"><i class="fa fa-behance"></i></a></li>
-                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                  </ul>
-                </div>
-              </figcaption>
-            </figure>
-            
-            <figure class="col-md-4 wow fadeInUp" data-wow-delay="1s">
-              <img class="img-responsive" src="http://placehold.it/327x324" alt="">
-              <figcaption class="staff-info">
-                <h4 class="name">Jonathan Hodes</h4>
-                <hr>
-                <p class="position">Developer</p>
-            
-                <div class="hover-card">
-                  <p>
-                    This is Photoshop's version  of lorem
-                    proin gravida nibh vel velit auctor
-                    aenean sollicitudin.
-                  </p>
-                  <hr>
-                  <ul class="social-profiles">
-                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="behance" href="#"><i class="fa fa-behance"></i></a></li>
-                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                  </ul>
-                </div>
-              </figcaption>
-            </figure>
-            
-            
-          </div>
-        </div>
-      </div>
-      <div class="rex-team-bg"></div>
-    </section>
-    <!-- End of Team Section -->
-    
-    <!-- Skills Section -->
-    <section id="rex-skills" class="container-fluid rex-skills">
-      <h3 class="hidden">OUR Skills</h3>
-      <hr class="hidden">        
-      <div class="container-fluid"> <!-- Containter -->
-        <div class="row">
-          <div class="col-md-3 left">
-            <img class="img-responsive" src="http://placehold.it/320x360" alt="">
-          </div>
+<body class="stretched">
 
-          <div class="col-md-6">
-    
-            <div class="rex-skill-item">
-              <header>
-                <p>WordPress</p>
-                <p>80%</p>
-              </header>
-              <div class="rex-progress-container" data-skill="80%">
-                <div class="rex-progress"></div>
-              </div>
-            </div>
-    
-            <div class="rex-skill-item">
-              <header>
-                <p>ADOBE Illustrator</p>
-                <p>90%</p>
-              </header>
-              <div class="rex-progress-container" data-skill="90%">
-                <div class="rex-progress"></div>
-              </div>
-            </div>
-    
-            <div class="rex-skill-item">
-              <header>
-                <p>ADOBE PHotoshop</p>
-                <p>60%</p>
-              </header>
-              <div class="rex-progress-container" data-skill="60%">
-                <div class="rex-progress"></div>
-              </div>
-            </div>
-    
-            <div class="rex-skill-item">
-              <header>
-                <p>PHotography</p>
-                <p>40%</p>
-              </header>
-              <div class="rex-progress-container" data-skill="40%">
-                <div class="rex-progress"></div>
-              </div>
-            </div>
-    
-            <div class="rex-skill-item">
-              <header>
-                <p>WEb Design</p>
-                <p>70%</p>
-              </header>
-              <div class="rex-progress-container" data-skill="70%">
-                <div class="rex-progress"></div>
-              </div>
-            </div>
-          </div>
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper" class="clearfix">
 
-          <div class="col-md-3 right">
-            <img class="img-responsive" src="http://placehold.it/320x360" alt="">
-          </div>
-        </div>
-      </div> <!-- Containter -->
-    </section>
-    <!-- End of Skills Section -->
-    
-    <!-- Pricing Section -->
-    <section id="rex-price-plan" class="container-fluid rex-pricing">
-      <div class="row">
-        <div class="container"> <!-- Container -->
-          <div class="row">
-            
-            <h3>OUR PLAN &amp; PRICING</h3>
-            <hr>
-            
-            <article class="col-md-4 wow fadeInUp" data-wow-delay="0s">
-              <div class="col-pad">
-                <div class="triangle"></div>
-                <img src="http://placehold.it/64x64" alt="">
-                <hr>
-                <h4> Basic- <span class="price"> 40$ </span> <small> /month </small> </h4>
-                <p>
-                  This is Photoshop's version  
-                  Proin gravida nibh vel velit 
-                  Aenean sollicitudin.
-                </p>
-                <a href="#">Sign Up</a>
-              </div>
-            </article>
-            
-            <article class="col-md-4 wow fadeInUp" data-wow-delay=".5s">
-              <div class="col-pad middle">
-                <div class="triangle"></div>
-                <img src="http://placehold.it/64x64" alt="">
-                <hr>
-                <h4> BAsic- <span class="price"> 56$ </span> <small> /month </small> </h4>
-                <p>
-                  This is Photoshop's version  
-                  Proin gravida nibh vel velit 
-                  Aenean sollicitudin.
-                </p>
-                <a href="#">Sign Up</a>
-              </div>
-            </article>
-            
-            <article class="col-md-4 wow fadeInUp" data-wow-delay="1s">
-              <div class="col-pad">
-                <div class="triangle"></div>
-                <img src="http://placehold.it/64x64" alt="">
-                <hr>
-                <h4> BAsic- <span class="price"> 70$ </span> <small> /month </small> </h4>
-                <p>
-                  This is Photoshop's version  
-                  Proin gravida nibh vel velit 
-                  Aenean sollicitudin.
-                </p>
-                <a href="#">Sign Up</a>
-              </div>
-            </article>
-            
-          </div>
-        </div> <!-- Container -->
-      </div>
-    </section>
-    <!-- End of Pricing Section -->
-    
-    <!-- Testimonial Section -->
-    <section id="rex-testimonial" class="container-fluid rex-testimonial">
-      <div class="container">
-        <div class="row" id="rex-testimonial-container">
-          <div class="col-md-6">
-            <figure>
-              <img class="img-responsive" src="http://placehold.it/92x92" alt="">
-              <figcaption>
-                “This is photoshop's version  proin gravida 
-                nibh vel velij Aenean sollicitudin”
-              </figcaption>
-            </figure>
-            <hr>
-            <div class="description">
-                <h4 class="name">Jonathan</h4>
-                <p class="position">Customer of Lal Tomato</p>
-              </div>
-          </div>
-      
-          <div class="col-md-6">
-            <figure>
-              <img class="img-responsive" src="http://placehold.it/92x92" alt="">
-              <figcaption>
-                “This is photoshop's version  proin gravida 
-                nibh vel velij Aenean sollicitudin”
-              </figcaption>
-            </figure>
-            <hr>
-            <div class="description">
-                <h4 class="name">BERTSCHI</h4>
-                <p class="position">Customer of Lal Tomato</p>
-              </div>
-          </div>
-      
-          <div class="col-md-6">
-            <figure>
-              <img class="img-responsive" src="http://placehold.it/92x92" alt="">
-              <figcaption>
-                “This is photoshop's version  proin gravida 
-                nibh vel velij Aenean sollicitudin”
-              </figcaption>
-            </figure>
-            <hr>
-            <div class="description">
-                <h4 class="name">DAVID</h4>
-                <p class="position">Customer of Lal Tomato</p>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End of Testimonial Section -->
+		
 
-    <!-- Blog Section -->      
-    <section id="rex-blog" class="container-fluid rex-blog">
-      <div class="row">
-        <div class="container">
-          <h3>Check Out Our Latest Blog</h3>
-          <hr>
-            
-          <div class="row rex-post wow fadeInUp" data-wow-delay="0s">
-            <figure class="col-md-6">
-              <img class="img-responsive" src="http://placehold.it/570x255" alt="">
-              <div class="post-overlay"><span class="triangle"></span></div>
-            </figure>
-            <article class="col-md-6">
-              <a href="#"><p class="date">18 January 2015</p></a>
-              <a class="rex-post-url" href="single.html"><h4 class="post-title">Blog Post With Image : Title Here</h4></a>
-              <hr>
-              <p class="post-meta"><a href="#">10 Comments</a> | <a href="#">Photography</a></p>
-            </article>
-          </div>
-            
-          <div class="row rex-post wow fadeInUp" data-wow-delay=".5s">
-            <figure class="col-md-6">
-              <img class="img-responsive" src="http://placehold.it/570x255" alt="">
-              <div class="post-overlay"><span class="triangle"></span></div>
-            </figure>
-            <article class="col-md-6">
-              <a href="#"><p class="date">18 January 2015</p></a>
-              <a class="rex-post-url" href="single-video.html"><h4 class="post-title">Blog Post With Video : Title Here</h4></a>
-              <hr>
-              <p class="post-meta"><a href="#">10 Comments</a> | <a href="#">Photography</a></p>
-            </article>
-          </div>
-            
-          <div class="row rex-post wow fadeInUp audio" data-wow-delay="1s">
-            <figure class="col-md-6">
-              <img class="img-responsive" src="http://placehold.it/570x255" alt="">
-              <div><span class="triangle"></span></div>
-            </figure>
-            <article class="col-md-6">
-              <a href="#"><p class="date">18 January 2015</p></a>
-              <a class="rex-post-url" href="single-audio.html"><h4 class="post-title">Blog Post With Audio : Title Here</h4></a>
-              <hr>
-              <p class="post-meta"><a href="#">10 Comments</a> | <a href="#">Photography</a></p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End of Blog Section -->
-    
-    <!-- Section Contact -->
-    <section id="rex-contact" class="container-fluid rex-contact">
-      
-      <div class="row rex-contact-form">
-        <div class="container">
-          <h3>Feel Free To Contact Us</h3>
-          <hr>
-          <div class="row wow fadeInUp">
-            <div class="col-md-12">
-              <form action="form.php#rex-contact" method="post">
-    
-                <div class="input-inline">
+		<!-- Header
+		============================================= -->
+		<header id="header" class="transparent-header floating-header clearfix">
 
-                  <div class="form-group">
-                    <label for="inputName"><i class="fa fa-user"></i></label>
-                    <input type="text" name="name" id="inputName" placeholder="Name (required)">
-                  </div>
-    
-                  <div class="form-group">
-                    <label for="inputEmail"><i class="fa fa-envelope-o"></i></label>
-                    <input type="email" name="email" id="inputEmail" placeholder="Email (required)">
-                  </div>
-                </div>
+			<div id="header-wrap">
 
-                <div class="clearfix"></div>
-                
-                <div class="form-group">
-                  <label for="inputMessage"><i class="fa fa-pencil-square-o"></i></label>
-                  <textarea name="message" id="inputMessage" placeholder="Message (required)"></textarea>
-                </div>
-    
-                <input class="submit-btn" name="sendMessage"  type="submit" value="Submit">
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="row rex-contact-address">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <h2 class="">Lal Tomato</h2>
-              <p class="">
-                4th Level, 43/R Creative Town, Dhaka Bangladesh
-              </p>
-              <a class="mail" href="mailto:email@yourdomain.com">email@yourdomain.com</a>
-              <h4><a class="phone" href="tel://00-123-456-789">+00 (123) 456 789</a></h4>
-              <ul class="social-profiles">
-                <li><a class="twitter" href="#"><i class="fa fa-twitter"></i> </a></li>
-                <li><a class="behance" href="#"><i class="fa fa-behance"></i> </a></li>
-                <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-      <div class="row rex-contact-map">
-        <div class="col-md-12">
-          <figure>
-            <img src="http://placehold.it/1900x200" alt="">
-            <a href="https://goo.gl/maps/Yz9I8" target="_blank">SHOW LOCATION</a>
+				<div class="container clearfix">
 
-          </figure>
-        </div>
-        <hr>
-      </div>
-    
-    </section>
-    <!-- End of Section Contact -->
-    
-    <!-- Footer Section -->
-    <footer class="container-fluid">
-      <div class="row">
-        <div class="col-md-12">
-          <h2>lal tomato created with <i class="fa fa-heart-o"></i> by rextheme </h2>
-          <p> &copy; Copyright 2015 <a href="#">Lal Tomato</a>, All Rigths Reserved</p>
-        </div>
-      </div>
-    </footer>
-    <!-- End of Footer Section -->
+					<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-    <!-- Lal Tomato JavaScript -->
-    <script src="js/vendor/jquery-1.11.2.min.js"></script>
-    <script src="js/vendor/wow.js"></script>
-    <script src="js/vendor/owl.carousel.js"></script>
-    <script src="js/vendor/jquery.sticky.js"></script>
-    <script src="js/vendor/jquery.stellar.js"></script>
-    <script src="js/vendor/jquery.tabslet.js"></script>
-    <script src="js/vendor/jquery.waypoints.js"></script>
-    <script src="js/vendor/jquery.vide.js"></script>
-    <script src="js/vendor/jquery.scrollUp.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+					<!-- Logo
+					============================================= -->
+					<div id="logo">
+						<a href="index.html" class="standard-logo"><img src="images/leadbee.png" alt="LeadBee Logo" width="126"></a>
+						<a href="index.html" class="retina-logo"><img src="images/leadbee.png" alt="LeadBee Logo" width="250"></a>
+					</div><!-- #logo end -->
+
+					<!-- Primary Navigation
+					============================================= -->
+					<nav id="primary-menu" class="with-arrows">
+
+						<ul>
+							<li class="current"><a href="#"><div>Home</div></a></li>
+							<li><a href="#"><div>Services</div></a></li>
+							<li><a href="#"><div>Pricing</div></a></li>
+							<li><a href="#"><div>Use Cases</div></a></li>
+							<li><a href="#"><div>Contact</div></a></li>
+						</ul>
+
+						
+
+						<!-- Menu Buttons
+						============================================= -->
+						<a href="#" class="button button-rounded fright leftmargin-sm">Get Started</a>
+
+					</nav><!-- #primary-menu end -->
+
+				</div>
+
+			</div>
+
+		</header><!-- #header end -->
+
+		<!-- Slider
+		============================================= -->
+		<section id="slider" class="slider-element slider-parallax full-screen clearfix" style="background: #FFF url('demos/seo/images/hero/hero-1.jpg') center center no-repeat; background-size: cover;">
+
+			<div class="vertical-middle">
+				<div class="container topmargin-sm">
+					<div class="row">
+						<div class="col-lg-5 col-md-8">
+							<div class="slider-title">
+								<div class="badge badge-pill badge-default">Powered by AI and ML</div>
+								<h2>Exclusive real estate leads in your city.</h2>
+								<p>Last year alone, we helped thousands of agents generate over 800,000 buyer and seller leads.
+</p>
+								<a href="#" class="button button-rounded button-large nott ls0">Get Started</a>
+								<a href="#" class="button button-rounded button-large button-light text-dark bg-white border nott ls0">Contact Us</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="video-wrap h-100 d-block d-lg-none">
+				<div class="video-overlay" style="background: rgba(255,255,255,0.85);"></div>
+			</div>
+
+
+		</section><!-- #slider end -->
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+
+			<div class="content-wrap pt-0">
+
+				<!-- Client Carousel
+				============================================= -->
+
+				<div class="section nobg m-0 border-bottom py-5">
+
+					<center> <div class="container">
+						<p>Trusted by the world's most innovative real estate firms</p>
+						<div id="oc-clients">
+							<div><img src="images/brands.png" alt="Brands"></div>
+					</div> </center>
+				</div>
+
+				<!-- Features
+				============================================= -->
+				<div class="section nobg mt-4 mb-0 pb-0">
+					<div class="container">
+						<div class="heading-block nobottomborder center divcenter mb-0 clearfix" style="max-width: 550px">
+							<div class="badge badge-pill badge-default">Services</div>
+							<h3 class="nott ls0 mb-3">About</h3>
+							<p>We make it easy to generate leads and build a pipeline of prospects fast by giving you all the tools you need.</p>
+						</div>
+						<div class="row justify-content-between align-items-center clearfix">
+
+							<div class="col-lg-4 col-sm-6">
+
+								<div class="feature-box fbox-right noborder">
+									<div class="fbox-icon">
+										<a href="#"><img src="demos/seo/images/icons/seo.svg" alt="Feature Icon" class="nobg noradius"></a>
+									</div>
+									<h3 class="nott ls0">SEO Optimization</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore, voluptates!</p>
+								</div>
+
+								<div class="feature-box fbox-right noborder mt-5">
+									<div class="fbox-icon">
+										<a href="#"><img src="demos/seo/images/icons/adword.svg" alt="Feature Icon" class="nobg noradius"></a>
+									</div>
+									<h3 class="nott ls0">Adwords Campaign</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, provident.</p>
+								</div>
+
+								<div class="feature-box fbox-right noborder mt-5">
+									<div class="fbox-icon">
+										<a href="#"><img src="demos/seo/images/icons/analysis.svg" alt="Feature Icon" class="nobg noradius"></a>
+									</div>
+									<h3 class="nott ls0">Digital Analysis</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
+								</div>
+
+							</div>
+
+							<div class="col-lg-3 col-7 offset-3 offset-sm-0 d-sm-none d-lg-block center my-5">
+								<img src="demos/seo/images/sections/2.png" alt="iphone" class="rounded  parallax" data-bottom-top="transform: translateY(-30px)" data-top-bottom="transform: translateY(30px)">
+							</div>
+
+							<div class="col-lg-4 col-sm-6">
+
+								<div class="feature-box noborder">
+									<div class="fbox-icon">
+										<a href="#"><img src="demos/seo/images/icons/social.svg" alt="Feature Icon" class="nobg noradius"></a>
+									</div>
+									<h3 class="nott ls0">Social Media Marketing</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore, voluptates!</p>
+								</div>
+
+								<div class="feature-box noborder mt-5">
+									<div class="fbox-icon">
+										<a href="#"><img src="demos/seo/images/icons/experience.svg" alt="Feature Icon" class="nobg noradius"></a>
+									</div>
+									<h3 class="nott ls0">Customer Experience</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
+								</div>
+
+								<div class="feature-box noborder mt-5">
+									<div class="fbox-icon">
+										<a href="#"><img src="demos/seo/images/icons/content_marketing.svg" alt="Feature Icon" class="nobg noradius"></a>
+									</div>
+									<h3 class="nott ls0">Content Marketing</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, provident.</p>
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				<!-- Pricing
+				============================================= -->
+				<div class="section m-0" style="background: url('demos/seo/images/sections/4.png') no-repeat center top; background-size: cover; padding: 140px 0 0;">
+					<div class="container">
+						<div class="row justify-content-between">
+							<div class="col-md-4 mt-4">
+								<div class="heading-block nobottomborder bottommargin-sm">
+									<div class="badge badge-pill badge-default">Pricing Table</div>
+									<h3 class="nott ls0">No Hidden Charges. <br>Choose Your Plan.</h3>
+								</div>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dolore voluptatem assumenda quae possimus sunt dignissimos tempora officia.</p>
+								<div class="pricing-tenure-switcher" data-container="#pricing-switch">
+									<span class="pts-left">Monthly</span>
+									<div class="pts-switcher">
+										<div class="switch">
+											<input id="switch-toggle-pricing-tenure" class="switch-toggle switch-toggle-round" type="checkbox">
+											<label for="switch-toggle-pricing-tenure"></label>
+										</div>
+									</div>
+									<span class="pts-right">Yearly</span>
+									<div class="price-discount"></div>
+								</div>
+							</div>
+
+							<div class="col-lg-7 col-md-8">
+								<div id="section-pricing" class="page-section nopadding nomargin">
+
+									<div id="pricing-switch" class="pricing row align-items-end bottommargin-lg clearfix">
+
+										<div class="col-md-6">
+
+											<div class="pricing-box">
+												<div class="pricing-title">
+													<img class="mb-2 nobg noradius" src="demos/seo/images/icons/man.svg" alt="Pricing Icon" width="50">
+													<h3>Agent Monthly Plan</h3>
+													<span>Most Popular</span>
+												</div>
+												<div class="pricing-price">
+													<div class="pts-switch-content-left"><span class="price-unit">&dollar;</span>5<span class="price-tenure">Per Month</span></div>
+													<div class="pts-switch-content-right"><span class="price-unit">&dollar;</span>48<span class="price-tenure">Per Year</span></div>
+												</div>
+												<div class="pricing-features border-bottom-0">
+													<ul>
+														<li><i class="icon-check-circle color mr-2"></i><strong>Limited</strong> Support</li>
+														<li class="pts-switch-content-left text-black-50"><i class="icon-minus-circle mr-2"></i><del style="opacity: .5"><strong>1</strong> Free Optimization</del></li>
+														<li class="pts-switch-content-right"><i class="icon-check-circle color mr-2"></i><strong>1</strong> Free Optimization</li>
+														<li><i class="icon-check-circle color mr-2"></i><strong>100+</strong> Pages</li>
+														<li><i class="icon-check-circle color mr-2"></i><strong>Single</strong> User License</li>
+														<li><i class="icon-check-circle color mr-2"></i>Phone &amp; Email Support</li>
+													</ul>
+												</div>
+												<div class="pricing-action">
+													<div class="pts-switch-content-left"><a href="#" class="button button-large button-rounded btn-block capitalize m-0 ls0">Get Started</a></div>
+													<div class="pts-switch-content-right"><a href="#" class="button button-large button-rounded btn-block capitalize m-0 ls0">Get Started</a></div>
+												</div>
+											</div>
+
+										</div>
+
+										<div class="col-md-6">
+
+											<div class="pricing-box">
+												<div class="pricing-title">
+													<img class="mb-2 nobg noradius" src="demos/seo/images/icons/group.svg" alt="Pricing Icon" width="60">
+													<h3>Brokerage Monthly Plan</h3>
+												</div>
+												<div class="pricing-price">
+													<div class="pts-switch-content-left"><span class="price-unit">&dollar;</span>12<span class="price-tenure">Per Month</span></div>
+													<div class="pts-switch-content-right"><span class="price-unit">&dollar;</span>115<span class="price-tenure">Per Year</span></div>
+												</div>
+												<div class="pricing-features border-bottom-0">
+													<ul>
+														<li><i class="icon-check-circle color mr-2"></i><strong>24*7</strong> Support</li>
+														<li><i class="icon-check-circle color mr-2"></i><strong>10</strong> Free Optimization</li>
+														<li><i class="icon-check-circle color mr-2"></i><strong>1000+</strong> Pages</li>
+														<li><i class="icon-check-circle color mr-2"></i><strong>Unlimited</strong> User License</li>
+														<li><i class="icon-check-circle color mr-2"></i>Phone &amp; Email Support</li>
+													</ul>
+												</div>
+												<div class="pricing-action">
+													<div class="pts-switch-content-left"><a href="#" class="button button-rounded button-large button-light text-dark bg-white border btn-block nott m-0 ls0">Get Started</a></div>
+													<div class="pts-switch-content-right"><a href="#" class="button button-rounded button-large button-light text-dark bg-white border btn-block nott m-0 ls0">Get Started</a></div>
+												</div>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
+				
+
+				
+
+				<!-- Features
+				============================================= -->
+				<div class="container clearfix py-5">
+					<div class="row">
+						<div class="col-md-4 mt-5">
+							<div class="feature-box fbox-center noborder">
+								<div class="fbox-icon">
+									<a href="#"><img src="demos/seo/images/icons/research.svg" alt="Feature Icon" class="nobg noradius"></a>
+								</div>
+								<h3 class="nott ls0">1. Planning &amp; Research</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, dolore, voluptates!</p>
+							</div>
+						</div>
+
+						<div class="col-md-4 mt-5">
+							<div class="feature-box fbox-center noborder">
+								<div class="fbox-icon">
+									<a href="#"><img src="demos/seo/images/icons/optimizing.svg" alt="Feature Icon" class="nobg noradius"></a>
+								</div>
+								<h3 class="nott ls0">2. Optimizing</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam, provident.</p>
+							</div>
+						</div>
+
+						<div class="col-md-4 mt-5">
+							<div class="feature-box fbox-center noborder">
+								<div class="fbox-icon">
+									<a href="#"><img src="demos/seo/images/icons/result.svg" alt="Feature Icon" class="nobg noradius"></a>
+								</div>
+								<h3 class="nott ls0">3. Result</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, ipsa!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				
+
+				
+
+				<!-- Promo/Contact
+				============================================= -->
+				<div class="section mt-5 footer-stick promo-section nobg" style="padding: 100px 0; overflow: visible">
+					<div class="container">
+						<div class="heading-block nobottomborder center">
+							<h5 class="uppercase ls1 mb-1">Act fast — availability is limited.
+</h5>
+							<h2 class="nott ls0">Check availability in your area!
+</h2>
+							<a href="#" class="button button-large button-rounded nott ml-0 ls0 mt-4">Contact Us Now</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="noborder bg-white">
+
+			
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights" style="background: url('demos/seo/images/hero/footer.png') no-repeat top center; background-size: cover; padding-top: 70px;">
+
+				<div class="container clearfix">
+
+					<div class="col_half">
+						Copyright &copy; 2020 Lead Bee Inc.<br>
+						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
+					</div>
+
+					<div class="col_half col_last tright">
+						<div class="copyrights-menu copyright-links clearfix">
+							<a href="#">Home</a>/<a href="#">Services</a>/<a href="#">Pricing</a>/<a href="#">Use Cases</a>/<a href="#">Contact</a>
+						</div>
+					</div>
+
+				</div>
+
+			</div><!-- #copyrights end -->
+
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="icon-angle-up"></div>
+
+	<!-- External JavaScripts
+	============================================= -->
+	<script src="js/jquery.js"></script>
+	<script src="js/plugins.js"></script>
+
+	<!-- Footer Scripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+	<script>
+		//Pricing Table Script
+		jQuery(document).ready( function($){
+			function pricingSwitcher( elementCheck, elementParent, elementPricing ) {
+				elementParent.find('.pts-left,.pts-right').removeClass('pts-switch-active');
+				elementPricing.find('.pts-switch-content-left,.pts-switch-content-right').addClass('hidden');
+
+				if( elementCheck.filter(':checked').length > 0 ) {
+					elementParent.find('.pts-right').addClass('pts-switch-active');
+					elementPricing.find('.pts-switch-content-right').removeClass('hidden');
+				} else {
+					elementParent.find('.pts-left').addClass('pts-switch-active');
+					elementPricing.find('.pts-switch-content-left').removeClass('hidden');
+				}
+			}
+
+			$('.pts-switcher').each( function(){
+				var element = $(this),
+					elementCheck = element.find(':checkbox'),
+					elementParent = $(this).parents('.pricing-tenure-switcher'),
+					elementPricing = $( elementParent.attr('data-container') );
+
+				pricingSwitcher( elementCheck, elementParent, elementPricing );
+
+				elementCheck.on( 'change', function(){
+					pricingSwitcher( elementCheck, elementParent, elementPricing );
+				});
+			});
+		});
+
+	</script>
+
+</body>
 </html>
